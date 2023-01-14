@@ -225,6 +225,45 @@ nav .nav-title {
     margin: 16px 0;
 }
 
+/* footer styles */
+.footer {
+    height: 239px;
+    background: #0A0826;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-title {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.footer-description {
+    color: #D9DBE1;
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: 3px;
+}
+
+.social-icon-container {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 17px;
+}
+
+.social-icon {
+    color: orangered;
+    background-color: #FFFFFF;
+    /* opacity: 0.1; */
+    border-radius: 50%;
+    padding: 8px 8.5px;
+    text-align: center;
+}
+
 /* ..........................
 media quires 
 ...............*/
