@@ -111,7 +111,7 @@ nav .nav-title {
     gap: 60px;
     align-items: center;
     justify-content: center;
-    height: 110px;
+    /* height: 110px; */
 }
 
 .logos img {
@@ -128,6 +128,76 @@ nav .nav-title {
     background-image: linear-gradient(90deg, rgba(192, 204, 218, 0.1) 0%, rgba(192, 204, 218, 0.6) 50.38%, rgba(192, 204, 218, 0.1) 100%);
 }
 
+/* products container styles */
+
+.products-container {
+    margin: 0 196px;
+}
+
+.products-container .products-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 28px;
+    color: #3A3A3A;
+}
+
+.products-container .products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.products-container .product {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    padding: 17px 15px;
+}
+
+.product-img img {
+    width: 100%;
+}
+
+.product-detail .product-name {
+    margin-top: 16px;
+    color: #18191F;
+    font-size: 28px;
+}
+
+.product-detail .full-star,
+.product-detail .half-star {
+    color: #FB8200;
+    font-size: 11px;
+}
+
+.product-detail .rating {
+    font-weight: 700;
+    font-size: 14px;
+    color: #5E6366;
+    margin-left: 8px;
+}
+
+.product-detail .product-price {
+    color: rgba(0, 0, 0, 0.87);
+    font-weight: 400;
+    font-size: 24px;
+    margin-top: 6px;
+}
+
+.product-detail .product-description {
+    color: #787885;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+#see-more {
+    color: rgba(224, 44, 109, 0.87);
+    font-weight: 700;
+    font-size: 16px;
+    text-align: right;
+    margin-top: 50px;
+}
 
 /* ..........................
 media quires 
@@ -187,6 +257,14 @@ media quires
     .opacity-border {
         display: none;
     }
+
+    .products-container {
+        margin: 0;
+    }
+
+    .products-container .products {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 /* tablet device */
@@ -224,5 +302,20 @@ media quires
 
     .opacity-border {
         display: none;
+    }
+
+    .products-container {
+        margin: 0;
+    }
+
+    .products-container .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/*  */
+@media screen and (min-width: 992px) {
+    .logos-container .logos {
+        height: 110px;
     }
 }
